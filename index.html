@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulario - Seguro No Pagamos Cooperativa</title>
+</head>
+<body>
+
+    <h1>Solicitud de contacto</h1>
+
+    <p>Complete el formulario para que un asesor se contacte con usted</p>
+
+    <form id="formularioContacto" action="#" method="post">
+        <div>
+            <label for="nombre">Nombre:</label></br>
+            <input type="text" id="nombre" name="nombre" class="inputDatos" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label></br>
+            <input type="text" id="apellido" name="apellido" class="inputDatos" required>
+        </div>
+        <div>
+            <label for="dni">DNI:</label></br>
+            <input type="number" id="dni" name="dni" min="1" class="inputDatos" required>
+        </div>
+        <div>
+            <label for="mail">Correo Electrónico:</label></br>
+            <input type="email" id="mail" name="mail" class="inputDatos" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label></br>
+            <input type="tel" id="telefono" name="telefono" class="inputDatos" required>
+        </div>
+        <div>
+            <label for="tipoSeguro">Tipo de Seguro:</label></br>
+                <input type="radio" name="tipoSeguro" id="basico" value="basico" required>
+                <label for="basico">Básico</label></br>
+                <input type="radio" name="tipoSeguro" id="intermedio" value="intermedio">
+                <label for="intermedio">Intermedio</label></br>
+                <input type="radio" name="tipoSeguro" id="premium" value="premium">
+                <label for="premium">Premium</label></br>
+        </div>
+
+        <p id="precioSeguro"></p>
+
+        <button id="botonEnviar" type="submit">Enviar</button>
+
+    </form>
+    
+    <script src="js.js"></script>
+</body>
+</html>
